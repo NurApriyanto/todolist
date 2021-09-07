@@ -13,10 +13,39 @@ import { MDBBtn,
   MDBInputGroupElement,
 } from 'mdb-react-ui-kit';
 
-export default function AddTodoModal() {
+export default function AddTodoModal({todos, setTodos}) {
+  // MDB Library
   const [centredModal, setCentredModal] = useState(false);
 
   const toggleShow = () => setCentredModal(!centredModal);
+
+  // Code
+  const [inputTaskName, setInputTaskName] = useState('');
+  const [inputDescription, setInputDescription] = useState('');
+
+  const inputTaskNameHandler = (e) => {
+    setInputTaskName(e.target.value);
+  }
+  
+  const inputDescriptionHandler = (e) => {
+    setInputDescription(e.target.value);
+  }
+
+  const addTaskHandler = (e) => {
+    setTodos([
+      ...todos,
+      {
+        id: Math.round(Math.random() * 1000),
+        taskName: inputTaskName,
+        description: inputDescription,
+        isCompleted: false,
+      }
+    ]);
+    setInputTaskName('');
+    setInputDescription('');
+    toggleShow();
+    console.log(todos);
+  }
 
   return (
     <>
@@ -51,8 +80,21 @@ export default function AddTodoModal() {
               <label htmlFor='task-name' className='form-label' style={{ color: '#D8D8D8',  }}>
                   Task name
               </label>
-              <MDBInput id='task-name' type='text' />
-              <MDBInput className='mt-3 text-light' label='Description' id='textAreaExample' textarea rows={4} />
+              <MDBInput 
+                className='text-light' 
+                id='task-name' 
+                type='text' 
+                value={inputTaskName}
+                onChange={inputTaskNameHandler} 
+              />
+              <MDBInput 
+                className='mt-3 text-light' 
+                label='Description' 
+                id='textAreaExample' 
+                textarea rows={4}
+                value={inputDescription}
+                onChange={inputDescriptionHandler}
+              />
               </div>
               <div className='col-md-5 offset-md-1'>
                 <label htmlFor='task-name' className='form-label' style={{ color: '#D8D8D8',  }}>
@@ -71,7 +113,12 @@ export default function AddTodoModal() {
             <MDBBtn style={{ backgroundColor: '#C4C4C4', color: '#272833'}} onClick={toggleShow}>
               Close
             </MDBBtn>
-            <MDBBtn style={{ backgroundColor: '#D94C4C', color: '#272833' }}>Add task</MDBBtn>
+            <MDBBtn 
+              style={{ backgroundColor: '#D94C4C', color: '#272833' }}
+              onClick={addTaskHandler}
+            >
+              Add task
+            </MDBBtn>
           </MDBModalFooter>
         </MDBModalContent>
       </MDBModalDialog>

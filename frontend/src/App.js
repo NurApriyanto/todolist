@@ -8,24 +8,26 @@ export default function App() {
   // changing body background color
   document.body.style = 'background: #20212C;';
 
-  const todos = useState([
+  const [todos, setTodos] = useState([
     {
       id: Math.round(Math.random() * 1000),
       taskName: 'Makan',
-      description: 'Makan-makan'
+      description: 'Makan-makan',
+      isCompleted: false,
     },
     {
       id: Math.round(Math.random() * 1000),
       taskName: 'Bersih',
-      description: 'Bersih-Bersih'
+      description: 'Bersih-Bersih',
+      isCompleted: false,
     },
   ])
 
   return (
     <>
       <Navbar />
-      <AddTodoModal />
-      <Todos todos={{ todos }}/>
+      <AddTodoModal todos={todos} setTodos={setTodos}/>
+      <Todos todos={todos} setTodos={setTodos}/>
     </>
   );
 }
