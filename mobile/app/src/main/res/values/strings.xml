@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Todolist</string>
+    <string name="welcome">Welcome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password ?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_here">New here ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="introduce_yourself">Introduce yourself</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="terms_of_use">terms of use</string>
+    <string name="i_aggree_the">I aggree the</string>
+    <string name="i_agree_the">I agree the</string>
+    <string name="don_t_worry_just_tell_me_your_email">Don\'t worry, just tell me your email</string>
+    <string name="password_title">Password ?</string>
+    <string name="email_has_been_sent">Email has been sent !</string>
+    <string name="now_open_your_email_we_have_sent_you_a_link_to_change_the_password_on_your_account_the_link_will_only_be_active_within_1x24_hours">Now open your email, we have sent you a link to change the password on your account. The link will only be active within 1x24 hours.</string>
+    <string name="sign_up_success">Sign Up Success</string>
+    <string name="after_registering_you_can_go_directly_to_the_todos_page_and_start_making_some_todolists">After registering, you can go directly to the todos page and start making some todolists</string>
+    <string name="all_task">All Task</string>
+    <string name="mengerjakan_matematika">Mengerjakan Matematika</string>
+    <string name="plus">+</string>
+    <string name="x">X</string>
+    <string name="after_registering_you_can_use_the_email_and_password_just_now_to_sign_in_to_the_application">After registering, you can use the email and password just now to sign in to the application</string>
 </resources>
