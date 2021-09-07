@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context=".ui.signupsuccess.SignUpSuccess">
+    tools:context=".ui.signupsuccess.SignUpSuccessActivity">
 
     <TextView
         android:id="@+id/tv_email_has_been_sent"
@@ -25,7 +25,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="64dp"
-        android:text="@string/after_registering_you_can_go_directly_to_the_todos_page_and_start_making_some_todolists"
+        android:text="@string/after_registering_you_can_use_the_email_and_password_just_now_to_sign_in_to_the_application"
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
