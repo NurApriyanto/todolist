@@ -63,6 +63,12 @@ class LoginActivity : AppCompatActivity() {
 
                 if (UserValidationHelper.isValidEmail(email) &&
                     UserValidationHelper.isValidPassword(password)) {
+                        viewModel.getUserStatus(email, password).observe(this@LoginActivity, {
+                            if (it != null) {
+                                viewModel.setUserToken(it, this@LoginActivity)
+                            }
+                        })
+
                         moveToUserTodoScreen("Fikran Akbar")
                 }
                 else {

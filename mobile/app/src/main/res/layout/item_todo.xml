@@ -14,14 +14,15 @@
         android:layout_height="match_parent"
         android:background="#49494C"
         android:orientation="horizontal"
-        android:padding="12dp">
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        tools:ignore="UnusedAttribute">
 
-        <ImageView
-            android:id="@+id/btn_check"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:src="@drawable/circle"
+        <CheckBox
+            style="@style/CustomCheckbox"
+            android:id="@+id/cb_taskCheck"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,19 +41,16 @@
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/btn_delete"
-            app:layout_constraintStart_toEndOf="@id/btn_check"
+            app:layout_constraintStart_toEndOf="@id/cb_taskCheck"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-        <TextView
+        <ImageView
             android:id="@+id/btn_delete"
-            android:layout_width="30dp"
+            android:layout_width="26dp"
             android:layout_height="0dp"
             android:layout_marginEnd="4dp"
-            android:text="@string/x"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textColor="#D94C4C"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
