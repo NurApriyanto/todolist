@@ -1,3 +1,4 @@
+//noinspection GradleCompatible
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
@@ -50,6 +51,8 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

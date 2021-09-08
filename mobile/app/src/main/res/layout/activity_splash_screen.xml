@@ -20,9 +20,10 @@
         tools:ignore="ContentDescription" />
 
     <TextView
+        android:id="@+id/tv_title_todolist"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Todolist"
+        android:text="@string/todolist"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -31,4 +32,14 @@
         app:layout_constraintTop_toBottomOf="@id/iv_logo_splash_screen"
         app:layout_constraintStart_toStartOf="@id/iv_logo_splash_screen"
         app:layout_constraintEnd_toEndOf="@id/iv_logo_splash_screen" />
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:mk_type="TwinFishesSpinner"
+        app:mk_color="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_todolist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

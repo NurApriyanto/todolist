@@ -5,4 +5,5 @@ data class TodoItem(
     val taskTitle: String,
     val taskDescription: String,
     val date: String,
+    var isChecked: Boolean = false
 )

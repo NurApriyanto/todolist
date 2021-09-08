@@ -23,4 +23,17 @@
     <string name="plus">+</string>
     <string name="x">X</string>
     <string name="after_registering_you_can_use_the_email_and_password_just_now_to_sign_in_to_the_application">After registering, you can use the email and password just now to sign in to the application</string>
+    <string name="dialog_task">Dialog Task</string>
+    <string name="task_name">Task Name</string>
+    <string name="task_description">Task Description</string>
+    <string name="set_a_date">Set a date</string>
+    <string name="add_a_photo">Add a photo ...</string>
+    <string name="submit">Submit</string>
+    <string name="user_data">com.chessporg.todolist.PREFERENCE_USER_TOKEN</string>
+    <string name="saved_token">SAVED_TOKEN</string>
+    <string name="todolist">Todolist</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="task_name_error">Task name shoud be filled</string>
+    <string name="task_description_error">Task description should be filled</string>
 </resources>
