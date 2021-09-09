@@ -8,7 +8,7 @@ import {
   MDBBtn,
 } from 'mdb-react-ui-kit';
 
-export default function CountUser() {
+export default function CountUser({users, setUser}) {
   return (
     <>
     <MDBCardBody

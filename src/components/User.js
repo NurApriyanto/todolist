@@ -27,6 +27,25 @@ export default function User({users, setUser}) {
   }
   return (
     <>
+    <MDBCardBody
+        style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            marginTop: "72px",
+            marginLeft: "420px",
+            marginBottom: "-45px",
+            fontSize: "16px"
+        }}>
+            
+    <MDBCardText>
+        <p>User :&nbsp;</p>
+    </MDBCardText>
+
+    <MDBCardText>
+        <p>{users.length}</p>
+    </MDBCardText>
+    </MDBCardBody>
+
     {users.map((user) => (
       <MDBCard key={user.id} className="mx-auto my-4" 
         style={{ 
